@@ -4,6 +4,7 @@ import os
 import webbrowser
 from pathlib import Path
 from PIL import Image
+import webbrowser
 
 
 # Create Header for Website
@@ -85,7 +86,25 @@ with tab2:
                  New coins are minted through transactions by non contract owners. 
                  The balances are shown before and after the contracts are used and the newly minted coin shows up 
                  in Metamask.""")
-        
+        image10 = Image.open("./images/deployer_compile.png")
+        image10_1 = Image.open("./images/connected_crowdsale.png")
+        image11 = Image.open("./images/connected_KaseiCoin.png")
+        image12 = Image.open("./images/significant_buy_ganache.png")
+        image13 = Image.open("./images/significant_buy_metamask.png")
+        st.markdown("## Deployer Contract")
+        st.image(image10)
+        col1, col2, col3= st.columns(3)
+        with col1:
+            st.header("Crowdsale Contract")
+            st.image(image10_1)
+        with col2:
+            st.header("ERC20 Coin Constructor")
+            st.image(image11)
+        with col3:
+            st.header("Purchase in Metamask")
+            st.image(image13)
+        st.markdown("## Ganache Transaction")
+        st.image(image12)
     
     with tab2_5:
         st.markdown("#### Crypto Notifier App")
@@ -95,8 +114,26 @@ with tab2:
                  years of past price changes and finding the absolute average for the coins listed. If in the past two
                  weeks any of these coins have been more volatile than what they have historically been known to be the
                  user gets a text message with the date and coin for when the volatility occurred.""")
+        image14 = Image.open("./images/2_week_pct_change.png")
+        image15 = Image.open("./images/conditional_logic.png")
+        image16 = Image.open("./images/text_message.png")
+        st.markdown("### Coin Gecko API Pull")
+        st.write("""After pulling two weeks worth of recent prices, we compare each day's 
+                 percent change to a historical absolute average daily percent change for each token. Our
+                 historical percent change is based on daily percent changes for the last two years""")
+        st.image(image14)
+        st.markdown("### Conditional Logic for Comparison")
+        st.image(image15)
+        st.markdown("### Twilio API Client")
+        st.write("""The user enters their number at the beginning of the CLI application and after
+                 they choose the coins they want a report on they get a rather lengthy text message highlighting 
+                 which days has significant price swings. Because cryptocurrencies are naturally volatile many dates 
+                 show up with alerts that a significant price change had occurred.""")
+        col5, col6, col7 = st.columns(3)
+        with col5:
+            st.image(image16, )
         
-
+        
 # tab 1 overview
 with tab1:
     st.markdown("## Silvano Ross")
@@ -152,6 +189,12 @@ with tab3:
     audio_file = open('./audio/hold me in.mp3', 'rb')
     audio_bytes = audio_file.read()
     st.audio(audio_bytes, format='audio/mp3')
+    
+    column1, column2, column3 = st.columns(3)
+    
+    with column2:
+        if st.button("Sound Cloud"):
+            webbrowser.open("https://soundcloud.com/vino-blanco-572551774")
     
     
     
