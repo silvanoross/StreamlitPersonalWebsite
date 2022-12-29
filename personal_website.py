@@ -5,6 +5,7 @@ import webbrowser
 from pathlib import Path
 from PIL import Image
 import webbrowser
+import urllib.request
 
 
 # Create Header for Website
@@ -194,7 +195,7 @@ with tab3:
     
     with column2:
         if st.button("Sound Cloud"):
-            webbrowser.open("https://soundcloud.com/vino-blanco-572551774")
+            webbrowser.open_new_tab("https://soundcloud.com/vino-blanco-572551774")
     
     
     
