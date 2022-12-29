@@ -169,11 +169,12 @@ with tab1:
 with tab3:
     st.header("Musical History")
     with st.expander(label="Blurb About Music - CLICK ME"):
-        st.write("""Having a creative outlet is incredibly important to Silvano. During his free time he loves to learn
-                 new hobbies and hone different skills. Having grown up playing in jazz bands music stays close to his heart
-                 with a newfound love for singing he tries to perfect this skill while also using programming to craft beats
-                 that pay homage to his background in jazz while also using modern day production techniques. Here are a few songs from 
-                 his album, Terra Firma, out on Itunes and Sound Cloud""")
+        st.write("""Having a creative outlet is incredibly important to me. During my free time I loves to learn
+                 new hobbies and hone different skills. Having grown up playing in jazz bands music stays close to my heart.
+                 With a newfound love for singing I try to perfect this skill while also using programming to craft beats
+                 that pay homage to my musical background. I encorporate modern day production techniques with an oldschool feel into my pieces. 
+                 Here are a few songs from my album, Terra Firma, out on Itunes and Sound Cloud""")
+        
     image = Image.open('./images/album_artwork.png')
     st.image(image, caption='TERRA FIRMA Album 2022')
     st.write("GIVE ME YOUR DREAMS")
