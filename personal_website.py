@@ -195,7 +195,7 @@ with tab3:
     
     with column2:
         if st.button("Sound Cloud"):
-            webbrowser.open_new_tab("https://soundcloud.com/vino-blanco-572551774")
+            webbrowser.open("https://soundcloud.com/vino-blanco-572551774")
     
     
     
