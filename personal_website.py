@@ -193,10 +193,10 @@ with tab3:
     
     column1, column2, column3 = st.columns(3)
     
-    with column2:
-        if st.button("Sound Cloud"):
-            url = "https://soundcloud.com/vino-blanco-572551774"
-            webbrowser.open(url)
+    # with column2:
+    #     if st.button("Sound Cloud"):
+    #         url = "https://soundcloud.com/vino-blanco-572551774"
+    #         webbrowser.open(url)
     
     
     
