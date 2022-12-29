@@ -52,7 +52,7 @@ with tab2:
         image6 = Image.open('./images/seasonality_trends.png')
         st.image(image5, caption="")
         st.write("""Using Facebook's Prophet time-series predicting software we can see how much a pound of 
-                chicken could end up being in the next. We can see it is predicted to steadily increase with variability
+                chicken could end up being in the next year. We can see it is predicted to steadily increase with variability
                 in seasonality. We can also see a noteworthy changepoint where the volitility in chicken price starts to 
                 increase.""")
         st.image(image6, caption="")
