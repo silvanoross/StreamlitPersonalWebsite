@@ -65,7 +65,7 @@ with tab2:
                 increase.""")
         st.image(image6, caption="")
         st.write("""Using Prophet's trends feature we can investigate how chicken price fluctuates on a monthly bases
-                during a yearly period. We were able to find that following February of most years chicken price increases
+                during a yearly period. We were able to find that following February of most years, chicken price increases
                 by about 60% from where it was at the start of the year. Its value remains high during the summer months
                 and slowly decreases going into the winter months.""")
     with tab2_3:
