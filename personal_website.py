@@ -176,6 +176,12 @@ with tab1:
 
 with tab3:
     st.header("Musical History")
+    if st.button("Amazon Music"):
+        webbrowser.open('https://music.amazon.com/albums/B0BQBHKXQY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_GkdoO59L4CSyQSX32inw6masV')
+    if st.button("SoundCloud"):
+         webbrowser.open("https://soundcloud.com/vino-blanco-572551774/sets/terra-firma")
+    if st.button("Spotify"):
+         webbrowser.open("https://open.spotify.com/album/6dlzSbn1iKovlj8QRvJYvM")
     with st.expander(label="Blurb About Music - CLICK ME"):
         st.write("""Having a creative outlet is incredibly important to me. During my free time I loves to learn
                  new hobbies and hone different skills. Having grown up playing in jazz bands music stays close to my heart.
