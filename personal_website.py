@@ -22,20 +22,28 @@ with tab2:
     st.write("-------------------------------------------------------------------------------------------------------")
     with tab2_1:
         st.markdown("#### Pathogenesis of Pancreatic Cancer in Mice")
-        st.write("""During freelance work as a Data Analyst I started creating visualizations and statistics for a lab
-                at the University of Texas Southwestern. Using programming to advance health and humanity is one of the many 
-                passions that I hold. Here are some following examples:""")
-        image1, image2 = Image.open('./images/KC_ADM.png'), Image.open('./images/KCG_ADM.png')
+        st.write("""During freelance work as a Data Analyst I am helping create innovative visualizations and statistics for the Wilkie lab
+                at the University of Texas Southwestern. Using programming and science to advance knowledge in health is one of my passions. 
+                This project highlights how KCG (Gna15 knockout) mice show less lesion development early on 
+                in a mouse's lifecycle. These G-protein knockout mice are research analogs for pancreatic cancer found in human. Gna15 has been proven to 
+                play a role in a distinct mechanism of early pancreas carcinogenisis.
+                There are clinical studies occurring in conjunction with these animal studies to help develop better treatments for pancreatic cancer.
+                Here are some following examples from the experiments:""")
+        st.markdown("""**Innamorati, G., Wilkie, T.M., 
+                Malpeli, G. et al. Gα15 in early onset of pancreatic ductal adenocarcinoma. Sci Rep 11, 14922 (2021). https://doi.org/10.1038/s41598-021-94150-3**""")
+        image1, image2, dual_image = Image.open('./images/KC_ADM.png'), Image.open('./images/KCG_ADM.png'), Image.open('./images/no_adm_combo.png')
+        pie_chart_one, pie_chart_two = Image.open('./images/KCG_Lesion_Pie.png'), Image.open('./images/KC_Lesion_Pie.png')
 
         st.image(image2, caption='Tumor Lesion Size, Score and Presence of Acinar-to-Ductal Metaplasia')
         st.write("""The above depicts what the sections of pancrease in the test cohort look like in terms of 
-                lesion score and presence of ADM. 
-                The below shows the difference in total lesion 
-                scores between both the test and
+                lesion score and presence of ADM. The below shows the difference in total lesion scores between both the test and
                 control groups""")
+        st.image(dual_image, caption='I changed the color to match the score and took out the circles indicating ADM for a preliminary\n'
+                 'figure. This is intended to make the figure align with the colors of the pie charts below.')
+        st.markdown("#### Observing the difference between the two groups ")
         image3, image4 = Image.open('./images/KC_pruned_pie.png'), Image.open('./images/KCG_pruned_pie.png')
-        st.image(image3, caption="")
-        st.image(image4, caption="")
+        st.image(pie_chart_one, caption="These are the total number of fields with lesions of score 0-4 for the knockout group")
+        st.image(pie_chart_two, caption="These are the total number of fields with lesions of score 0-4 for the control group")
     
     with tab2_2:
         st.markdown("#### Future of Chicken")
