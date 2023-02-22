@@ -30,19 +30,21 @@ with tab2:
                 play an important role in a distinct mechanism for early pancreatic carcinogenisis.
                 There are additional clinical studies occurring in conjunction with these murine studies to help develop better treatments for pancreatic cancer.
                 Here are some following examples from the experiments:""")
-        st.markdown("""**Innamorati, G., Wilkie, T.M., 
-                Malpeli, G. et al. Gα15 in early onset of pancreatic ductal adenocarcinoma. Sci Rep 11, 14922 (2021). https://doi.org/10.1038/s41598-021-94150-3**""")
+        st.markdown(""">Reference
+                    Innamorati, G., Wilkie, T.M., Malpeli, G. et al. Gα15 in early onset of pancreatic ductal adenocarcinoma. Sci Rep 11, 14922 (2021). https://doi.org/10.1038/s41598-021-94150-3""")
         image1, image2, dual_image = Image.open('./images/KC_ADM.png'), Image.open('./images/KCG_ADM.png'), Image.open('./images/no_adm_combo.png')
         pie_chart_one, pie_chart_two = Image.open('./images/KCG_Lesion_Pie.png'), Image.open('./images/KC_Lesion_Pie.png')
 
-        st.image(image2, caption='Tumor Lesion Size, Score and Presence of Acinar-to-Ductal Metaplasia')
+        st.write("##### Lesion Score and ADM Visualization")
+        st.image(image2, caption='Tumor Lesion Size, Score and Presence of Acinar-to-Ductal Metaplasia (ADM)')
         st.write("""The above depicts sections of the mouse pancrease for the test cohort showing 
-                lesion score as size of the blue dots and presence of ADM with a black ring encompassing the blue dots. 
+                lesion score as size of the blue dots and presence of acinar-to-ductal metaplasia (ADM) with a black ring encompassing the blue dots. 
                 The below image shows the difference in total lesion scores between both the test and
-                control groups""")
+                control groups.""")
+        st.write("##### Color Coordinated Dot Map")
         st.image(dual_image, caption='I changed the color scheme to highlight the different scores and took out the encompassing circles indicating ADM. \n'
                  'This is intended to make the figure align with the colors of the pie charts below.')
-        st.markdown("#### Observing the difference between the two groups ")
+        st.markdown("##### Observing the Overall Difference Between the Two Groups ")
         image3, image4 = Image.open('./images/KC_pruned_pie.png'), Image.open('./images/KCG_pruned_pie.png')
         st.image(pie_chart_one, caption="These are the total number of fields with lesions of score 0-4 for the knockout group")
         st.image(pie_chart_two, caption="These are the total number of fields with lesions of score 0-4 for the control group")
@@ -221,6 +223,9 @@ with tab1:
 
 with tab3:
     st.header("Musical History")
+    
+    st.write("#### Links to Music - Warning: Some songs are explicit")
+    st.write("Mobile devices do not load the links below")
     if st.button("Amazon Music"):
         webbrowser.open('https://music.amazon.com/albums/B0BQBHKXQY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_GkdoO59L4CSyQSX32inw6masV')
     if st.button("SoundCloud"):
@@ -232,10 +237,14 @@ with tab3:
                  new hobbies and hone different skills. Having grown up playing in jazz bands music stays close to my heart.
                  With a newfound love for singing I try to perfect this skill while also using programming to craft beats
                  that pay homage to my musical background. I encorporate modern day production techniques with an oldschool feel into my pieces. 
-                 Here are a few songs from my album, Terra Firma, out on Itunes and Sound Cloud""")
+                 Here are a few songs from my album, Terra Firma, out on Itunes, Apple Music, Spotify and Sound Cloud""")
         
     image = Image.open('./images/album_artwork.png')
     st.image(image, caption='TERRA FIRMA Album 2022')
+    
+    st.write("##### Warning - Explicit Content")
+    st.write("Songs do not load on mobile devices")
+    st.write("")
     st.write("GIVE ME YOUR DREAMS")
     audio_file = open('./audio/give me your dreams.mp3', 'rb')
     audio_bytes = audio_file.read()
