@@ -50,8 +50,8 @@ with tab2:
     with tab2_2:
         st.markdown("#### Future of Chicken")
         st.write("""Due to inflation reaching a high of around 7% 
-                in 2021 our group thought it would be interesting to predict chicken price changes in the coming year. 
-                With data taken from Kaggle on bulk chicken prices, we wanted to see if it will be feasible to include chicken as part of our diet
+                in 2021 our group thought it would be interesting to predict chicken price changes for the coming couple of years. 
+                With data taken from Kaggle on bulk chicken prices, we wanted to see if it would be feasible to include chicken as part of our diet
                 in the next year. 
                 We were also curious about the seasonality of chicken prices and when the best time to buy chicken may
                 be as a consumer. We even took another scope for our project where we assumed we were chicken farmers or investors looking to buy chicken futures 
