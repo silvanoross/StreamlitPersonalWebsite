@@ -189,7 +189,7 @@ with tab2:
 # tab 1 overview
 with tab1:
     st.markdown("## Silvano Ross")
-    st.image('./images/me_professional.jpg', caption='Taken at the Arboretum')
+    st.image('./images/me2024PNG.png', caption='Professional Head Shot')
     with st.expander(label="About Silvano - CLICK HERE"):
         st.write("""
         His career passion started in science with a desire to help others through research. While he still is a science enthusiast 
@@ -224,14 +224,7 @@ with tab1:
 with tab3:
     st.header("Musical History")
     
-    st.write("#### Links to Music - Warning: Some songs are explicit")
-    st.write("Mobile devices do not load the links below")
-    if st.button("Amazon Music"):
-        webbrowser.open('https://music.amazon.com/albums/B0BQBHKXQY?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_GkdoO59L4CSyQSX32inw6masV')
-    if st.button("SoundCloud"):
-         webbrowser.open("https://soundcloud.com/vino-blanco-572551774/sets/terra-firma")
-    if st.button("Spotify"):
-         webbrowser.open("https://open.spotify.com/album/6dlzSbn1iKovlj8QRvJYvM")
+
     with st.expander(label="Blurb About Music - CLICK ME"):
         st.write("""Having a creative outlet is incredibly important to me. During my free time I love to learn
                  new hobbies and hone different skills. Having grown up playing in jazz bands music stays close to my heart.
@@ -239,24 +232,11 @@ with tab3:
                  that pay homage to my musical background. I encorporate modern day production techniques with an oldschool feel into my pieces. 
                  Here are a few songs from my album, Terra Firma, out on Itunes, Apple Music, Spotify and Sound Cloud""")
         
-    image = Image.open('./images/album_artwork.png')
-    st.image(image, caption='TERRA FIRMA Album 2022')
     
-    st.write("##### Warning - Explicit Content")
-    st.write("Songs do not load on mobile devices")
-    st.write("")
-    st.write("GIVE ME YOUR DREAMS")
-    audio_file = open('./audio/give me your dreams.mp3', 'rb')
-    audio_bytes = audio_file.read()
-    st.audio(audio_bytes, format='audio/mp3')
     
-    st.write("YEARN")
-    audio_file = open('./audio/yearn.mp3', 'rb')
-    audio_bytes = audio_file.read()
-    st.audio(audio_bytes, format='audio/mp3')
     
-    st.write("HOLD ME IN")
-    audio_file = open('./audio/hold me in.mp3', 'rb')
+    st.write("Goofy Love")
+    audio_file = open('./audio/goofy_love.wav', 'rb')
     audio_bytes = audio_file.read()
     st.audio(audio_bytes, format='audio/mp3')
     
